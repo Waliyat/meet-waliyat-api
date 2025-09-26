@@ -6,7 +6,7 @@ What if your next Product Manager came with API documentation? This is my attemp
 I'm Waliyat, and this is my portfolio presented as a REST API - because sometimes the best way to show you understand developer experience is to become the API.
 
 ## 📖 Documentation
-**[View Live API Docs →](https://wolayiwola.github.io/pm-as-a-service)**
+**[View Live API Docs →](https://waliyat.github.io/meet-waliyat-api/)**
 
 ## 🔧 Available Endpoints
 
