@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Waliyat Olayiwola - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to resume */
+        .resume-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 60px;
+            line-height: 1.6;
+        }
+        
+        .resume-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .resume-header h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .resume-subtitle {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            color: #718096;
+            font-size: 0.95em;
+        }
+        
+        .contact-info span {
+            margin: 0 10px;
+        }
+        
+        .resume-summary {
+            background: #f7fafc;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            color: #4a5568;
+            border-left: 4px solid #667eea;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section-title {
+            color: #2d3748;
+            font-size: 1.4em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .job {
+            margin-bottom: 30px;
+        }
+        
+        .job-title {
+            color: #2d3748;
+            font-size: 1.15em;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .company {
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        .job ul {
+            padding-left: 20px;
+            color: #4a5568;
+        }
+        
+        .job li {
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+        
+        .education-item {
+            margin-bottom: 15px;
+            color: #4a5568;
+        }
+        
+        .degree {
+            font-weight: 600;
+            color: #2d3748;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 12px;
+        }
+        
+        .skill {
+            background: #f7fafc;
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-align: center;
+            color: #4a5568;
+            font-size: 0.9em;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        
+        .skill:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .highlight {
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .resume-container {
+                box-shadow: none;
+                margin: 0;
+                padding: 40px;
+            }
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav style="text-align: right; padding: 10px 20px; background: rgba(45, 55, 72, 0.95);">
+        <a href="index.html" style="color: #cbd5e0; text-decoration: none; margin: 0 15px; font-size: 0.9em;">API Docs</a>
+        <a href="resume.html" style="color: #cbd5e0; text-decoration: none; margin: 0 15px; font-size: 0.9em;">Traditional Resume</a>
+        <a href="analytics.html" style="color: #cbd5e0; text-decoration: none; margin: 0 15px; font-size: 0.9em;">Analytics</a>
+        <a href="https://github.com/waliyat/meet-waliyat-api" style="color: #cbd5e0; text-decoration: none; margin: 0 15px; font-size: 0.9em;">Source</a>
+    </nav>
+
+    <div class="resume-container">
+        <div class="resume-header">
+            <h1>Waliyat Olayiwola</h1>
+            <div class="resume-subtitle">Product Manager, API</div>
+            <div class="contact-info">
+                <span>📱 +1 563 508 1909</span>
+                <span>📍 Cleveland, OH | NYC (Monthly)</span>
+                <span>✉️ wbolayiwola@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="resume-summary">
+            Product Manager with 5+ years building enterprise APIs. Currently manage backend systems at Amplify Education serving <span class="highlight">1M+ students</span> across hundreds of school districts. Optimized Clever integration (100+ enterprises) and built custom solution for LAUSD (600K students). Drive product strategy through customer feedback sessions, technical reviews, and OKR planning. Strong technical background, MS Computer Science, build APIs in Python/Django.
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
+            
+            <div class="job">
+                <div class="job-title">Product Manager, Enterprise API & Backend Systems</div>
+                <div class="company">Amplify Education, Brooklyn, New York (Sep 2022 - Present)</div>
+                <ul>
+                    <li>Drive product strategy and roadmap through monthly enterprise customer interviews and usage analytics, improving NPS from <span class="highlight">58 to 76</span></li>
+                    <li>Optimized existing Clever integration, added roster sync capabilities, onboarding flow, monitoring and reduced integration errors by <span class="highlight">60%</span></li>
+                    <li>Built custom API solution for LAUSD (<span class="highlight">600K students</span>) after 6-month discovery with stakeholders across IT, curriculum, and procurement</li>
+                    <li>Partner with engineering to build enterprise-grade API features including authentication (SSO, OAuth, SAML), rate limiting, and FERPA/COPPA compliance</li>
+                    <li>Turned enterprise customers into champions, built API monitoring dashboard that reduced "where's my data?" tickets by <span class="highlight">73%</span> and transformed our biggest complainer into a reference customer</li>
+                    <li>Launched AI vocabulary feature, ran A/B tests showing <span class="highlight">22% improvement</span> in student outcomes</li>
+                    <li>Define and track OKRs across 3 engineering teams with <span class="highlight">85% completion rate</span> for 8 consecutive quarters</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-title">Project Manager</div>
+                <div class="company">Ready Set Rocket, New York, New York (Jan 2021 - Aug 2022)</div>
+                <ul>
+                    <li>Contributed to <span class="highlight">$1M in revenue</span> by leading the launch of 10+ high-impact websites and mobile apps for clients</li>
+                    <li>Saved 3 enterprise deals by translating technical API architecture into business value for executives</li>
+                    <li>Developed clear roadmap for enterprise API features including webhook architectures, API versioning, and deployment tools</li>
+                    <li>Created reusable API integration patterns that reduced implementation time by <span class="highlight">40%</span></li>
+                    <li>Managed 3-5 concurrent projects with <span class="highlight">90% on-time delivery</span></li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-title">Product Analyst</div>
+                <div class="company">Simplify Healthcare, Chicago, IL (June 2019 - Dec 2020)</div>
+                <ul>
+                    <li>Translated healthcare compliance requirements into API specifications and acceptance criteria</li>
+                    <li>Worked with engineering on API design for insurance systems. Identified critical HIPAA compliance issues</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="education-item">
+                <span class="degree">Master's in Data Analytics</span><br>
+                George Mason University, August 2019
+            </div>
+            <div class="education-item">
+                <span class="degree">Master's in Computer Science</span><br>
+                Western Illinois University, December 2017
+            </div>
+            <div class="education-item">
+                <span class="degree">Bachelor's in Computer Science</span><br>
+                Osun State University, May 2014
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">SKILLS</h2>
+            <div class="skills-grid">
+                <div class="skill">Research & Roadmap</div>
+                <div class="skill">OKRs</div>
+                <div class="skill">A/B Testing</div>
+                <div class="skill">Product Analytics</div>
+                <div class="skill">LLM & Claude API</div>
+                <div class="skill">REST APIs</div>
+                <div class="skill">OAuth/SAML/SSO</div>
+                <div class="skill">Webhooks</div>
+                <div class="skill">Python</div>
+                <div class="skill">Django</div>
+                <div class="skill">Flutter</div>
+                <div class="skill">AWS EC2</div>
+                <div class="skill">Datadog</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">INDEPENDENT PROJECT</h2>
+            <div class="job">
+                <div class="job-title">AI Home Management Mobile App</div>
+                <ul>
+                    <li>Built full-stack application with Django REST API backend and Flutter mobile client</li>
+                    <li>Integrated Claude and OpenAI APIs with rate limiting and error handling</li>
+                    <li>Applied complete product lifecycle: user research, API design, monitoring, deployment</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
