@@ -22,6 +22,13 @@ body {
     overflow: hidden;
 }
 
+.top-nav {
+    text-align: right;
+    padding: 10px 20px;
+    background: rgba(45, 55, 72, 0.95);
+    margin-bottom: 40px;
+}
+
 header {
     background: #2d3748;
     color: white;
