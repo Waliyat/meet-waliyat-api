@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waliyat API Documentation</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Waliyat API v2.0</h1>
+            <p class="subtitle">Product Management as a Service</p>
+            <span class="status">🟢 PRODUCTION READY</span>
+        </header>
+
+        <div class="content">
+            <!-- GET /experience -->
+            <div class="endpoint">
+                <div class="endpoint-header">
+                    <h2><span class="method get">GET</span>/experience</h2>
+                </div>
+                <div class="endpoint-body">
+                    <p class="description">Returns 5+ years of enterprise product management experience</p>
+                    <p class="response-label">Response</p>
+                    <pre>{
+  "total_years": 5,
+  "companies": [
+    {
+      "name": "Amplify Education",
+      "role": "Product Manager, Enterprise API",
+      "duration": "Sep 2022 - Present",
+      "impact": "1M+ students, 500+ districts"
+    },
+    {
+      "name": "Ready Set Rocket",
+      "role": "Project Manager",
+      "duration": "Jan 2021 - Aug 2022",
+      "impact": "$1M+ revenue generated"
+    },
+    {
+      "name": "Simplify Healthcare",
+      "role": "Product Analyst",
+      "duration": "June 2019 - Dec 2020",
+      "impact": "Healthcare compliance APIs"
+    }
+  ],
+  "specialization": "Enterprise APIs, Backend Systems, Developer Experience"
+}</pre>
+                </div>
+            </div>
+
+            <!-- GET /current-role -->
+            <div class="endpoint">
+                <div class="endpoint-header">
+                    <h2><span class="method get">GET</span>/current-role</h2>
+                </div>
+                <div class="endpoint-body">
+                    <p class="description">Amplify Education: Building the future of K-12 technology</p>
+                    <p class="response-label">Response</p>
+                    <pre>{
+  "company": "Amplify Education",
+  "position": "Product Manager, Backend Systems",
+  "users": 1000000,
+  "enterprise_customers": 500,
+  "districts": "Major districts including LAUSD",
+  "responsibilities": [
+    "API strategy and roadmap",
+    "Enterprise integrations (Clever, rostering)",
+    "OKR planning across 3 engineering teams",
+    "Customer feedback and technical reviews"
+  ],
+  "recent_wins": {
+    "nps_improvement": "58 → 76",
+    "support_reduction": "73% fewer API tickets",
+    "okr_completion": "85% for 8 quarters"
+  }
+}</pre>
+                </div>
+            </div>
+
+            <!-- POST /challenges -->
+            <div class="endpoint">
+                <div class="endpoint-header">
+                    <h2><span class="method post">POST</span>/challenges</h2>
+                </div>
+                <div class="endpoint-body">
+                    <p class="description">Submit any API or enterprise integration problem</p>
+                    <div class="params">
+                        <div class="param">
+                            <span class="param-name">challenge</span>
+                            <span class="param-type">string (required)</span>
+                        </div>
+                        <div class="param">
+                            <span class="param-name">complexity</span>
+                            <span class="param-type">enum: ["standard", "enterprise", "government"]</span>
+                        </div>
+                    </div>
+                    <p class="response-label">Example Request</p>
+                    <pre>{
+  "challenge": "Need to integrate with 500 different school systems",
+  "complexity": "enterprise"
+}</pre>
+                    <p class="response-label">Response</p>
+                    <pre>{
+  "status": "accepted",
+  "approach": "Platform strategy with adapters",
+  "timeline": "Q2 delivery",
+  "similar_experience": "Clever integration (100+ districts)",
+  "confidence_level": 0.95
+}</pre>
+                </div>
+            </div>
+
+            <!-- GET /technical-skills -->
+            <div class="endpoint">
+                <div class="endpoint-header">
+                    <h2><span class="method get">GET</span>/technical-skills</h2>
+                </div>
+                <div class="endpoint-body">
+                    <p class="description">Languages, frameworks, and actual API builds</p>
+                    <p class="response-label">Response</p>
+                    <pre>{
+  "languages": ["Python", "SQL", "JavaScript"],
+  "frameworks": ["Django", "Django REST Framework", "Flutter"],
+  "api_expertise": [
+    "REST API design",
+    "OAuth 2.0 / SAML / SSO",
+    "Webhooks",
+    "Rate limiting strategies",
+    "API versioning"
+  ],
+  "tools": [
+    "Postman (daily user)",
+    "Datadog",
+    "JIRA",
+    "AWS EC2"
+  ],
+  "superpower": "I debug API issues before escalating to engineering",
+  "proof": "Built working Django APIs, not just specs"
+}</pre>
+                </div>
+            </div>
+
+            <!-- GET /case-studies/lausd -->
+            <div class="endpoint">
+                <div class="endpoint-header">
+                    <h2><span class="method get">GET</span>/case-studies/lausd</h2>
+                </div>
+                <div class="endpoint-body">
+                    <p class="description">How I navigated a 600K student integration</p>
+                    <p class="response-label">Response</p>
+                    <pre>{
+  "client": "Los Angeles Unified School District",
+  "scale": 600000,
+  "students": 600000,
+  "challenge": "Complex procurement, strict security requirements",
+  "discovery_period": "6 months",
+  "stakeholders": ["IT", "Curriculum", "Security", "Procurement"],
+  "solution": {
+    "authentication": "Custom SSO with district Active Directory",
+    "data_sync": "Nightly roster updates with retry logic",
+    "compliance": "FERPA, COPPA, California privacy laws"
+  },
+  "result": "Successful integration, now a reference customer",
+  "lesson_learned": "Enterprise sales is about trust, not features"
+}</pre>
+                </div>
+            </div>
+
+            <!-- GET /case-studies/clever -->
+            <div class="endpoint">
+                <div class="endpoint-header">
+                    <h2><span class="method get">GET</span>/case-studies/clever</h2>
+                </div>
+                <div class="endpoint-body">
+                    <p class="description">Optimizing platform auth for 100+ enterprises</p>
+                    <p class="response-label">Response</p>
+                    <pre>{
+  "platform": "Clever",
+  "integration_type": "SSO and Rostering",
+  "districts_connected": 100,
+  "improvements_made": {
+    "error_reduction": "60% fewer integration failures",
+    "onboarding": "Reduced from 2 weeks to 3 days",
+    "monitoring": "Real-time alerts for sync issues"
+  },
+  "technical_details": {
+    "auth_method": "OAuth 2.0",
+    "data_format": "OneRoster compliant",
+    "sync_frequency": "Real-time + nightly batch"
+  },
+  "impact": "3x adoption increase in 6 months"
+}</pre>
+                </div>
+            </div>
+
+            <!-- GET /metrics -->
+            <div class="endpoint">
+                <div class="endpoint-header">
+                    <h2><span class="method get">GET</span>/metrics</h2>
+                </div>
+                <div class="endpoint-body">
+                    <p class="description">Quantified impact and results</p>
+                    <div class="metrics">
+                        <div class="metric">
+                            <div class="metric-value">73%</div>
+                            <div class="metric-label">API Ticket Reduction</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">99.9%</div>
+                            <div class="metric-label">Platform Uptime</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">58→76</div>
+                            <div class="metric-label">NPS Improvement</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">85%</div>
+                            <div class="metric-label">OKR Completion</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">1M+</div>
+                            <div class="metric-label">Users Served</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">10x</div>
+                            <div class="metric-label">Growth via APIs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GET /work-style -->
+            <div class="endpoint">
+                <div class="endpoint-header">
+                    <h2><span class="method get">GET</span>/work-style</h2>
+                </div>
+                <div class="endpoint-body">
+                    <p class="description">How I actually work (spoiler: I debug in Postman)</p>
+                    <p class="response-label">Response</p>
+                    <pre>{
+  "principles": [
+    "Debug before escalating",
+    "Talk to customers weekly",
+    "Documentation is a feature",
+    "Ship on time, not perfect"
+  ],
+  "daily_tools": [
+    "Postman for API testing",
+    "Datadog for monitoring",
+    "JIRA for everything else",
+    "Slack for quick syncs"
+  ],
+  "communication": {
+    "with_engineers": "Technical specs + working prototypes",
+    "with_executives": "Metrics + revenue impact",
+    "with_customers": "Listen first, solution second"
+  },
+  "fun_fact": "I celebrate documentation improvements"
+}</pre>
+                </div>
+            </div>
+
+            <!-- GET /availability -->
+            <div class="endpoint">
+                <div class="endpoint-header">
+                    <h2><span class="method get">GET</span>/availability</h2>
+                </div>
+                <div class="endpoint-body">
+                    <p class="description">Location and response times</p>
+                    <p class="response-label">Response</p>
+                    <pre>{
+  "primary_location": "Cleveland, OH",
+  "secondary_location": "New York, NY (monthly)",
+  "timezone": "America/New_York",
+  "response_time": {
+    "email": "< 24 hours",
+    "urgent": "< 2 hours",
+    "coffee_chat": "Always available"
+  },
+  "remote_setup": "Professional home office",
+  "travel": "25% no problem"
+}</pre>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h3>Ready to integrate?</h3>
+            <p>Let's discuss how I can help build your API infrastructure</p>
+            <a href="mailto:wbolayiwola@gmail.com" class="contact-button">Start Integration</a>
+            <p style="margin-top: 20px; opacity: 0.8; font-size: 0.9em;">
+                wbolayiwola@gmail.com | Cleveland, OH | NYC (monthly)
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
